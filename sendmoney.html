@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sendmoney.css">
+</head>
+
+<body>
+    <section class="cosas-de-arriba">
+        <h2>ALKE WALLET</h2>
+        <img src="/img/LOGO WALLET.png" alt="">
+    </section>
+    <div class="layout">
+        <nav>
+            <img src="/img/fotoperfil.jpeg" alt="" class="fotoperfil">
+            <ul class="menu-desplegable">
+                <li>
+                    <a href="#">Hola Luks</a>
+                    <ul>
+                        <li><a href="/index.html">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li><a href="/transactions.html">Historial</a></li>
+                        <li><a href="/deposit.html">Fondos</a></li>
+                        <li><a href="/contacts.html">Contactos / Transferir</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Reclamos </a>
+
+                </li>
+                <li>
+                    <a href="#">Seguridad </a>
+
+                </li>
+
+            </ul>
+        </nav>
+        <div class="contenido">
+            <!--aqui poner saldo disponible-->
+            <h3 id="saldoDisponible"></h3>
+
+            <h2>Transferir a </h2>
+
+            <!--aqui poner una card con los datos del contacto seleccionado-->
+            <div id="datosContactoTransferencia" class="contacto"></div>
+
+            <form id="formularioTransferencia" class="formulario-contacto">
+                <label for="Monto a tranferir">Monto a tranferir</label>
+                <br><br>
+                <input type="number" id="montoTransferir">
+                <br>
+                <br>
+                <div class="fila-botones">
+                    <br><br>
+                    <button type="submit" id="botonTransferir" class="boton-menu">Transferir </button>
+                    <a href="/contacts.html" class="boton-menu boton-regresar">Cancelar</a>
+                </div>
+            </form>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Lucas Carvacho Diseñador UX/UI</p>
+    </footer>
+
+    <script src="/js/sendmoney.js"></script>
+
+</body>
+
+</html>

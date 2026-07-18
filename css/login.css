@@ -1,0 +1,73 @@
+body {
+    background-color: #2D2D2D;
+    place-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.btn-primary {
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: rgb(89, 89, 255);
+    color: white;
+    border: 2px solid rgb(89, 89, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: rgb(151, 151, 244);
+    color: white;
+    border: 2px solid rgb(151, 151, 244);
+}
+
+.btn-secondary {
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: #2D2D2D;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.boton-segundario:hover {
+    background-color: #2D2D2D;
+    color: rgb(89, 89, 255);
+    border: 2px solid rgb(89, 89, 255);
+}
+
+.logo-gato {
+    display: flex;
+    justify-content: center;
+}
+
+.cajita-rut {
+    width: 163px;
+}
+
+.cajita-rut:hover {
+    border: 2px solid rgb(89, 89, 255);
+}
+
+.cajita-contraseña {
+    width: 163px;
+}
+
+.cajita-contraseña:hover {
+    border: 2px solid rgb(89, 89, 255);
+}

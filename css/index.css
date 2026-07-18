@@ -1,0 +1,131 @@
+body {
+    background-color: #2D2D2D;
+    place-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.boton-principal {
+    font-size: 18px;
+    padding: 5px 5px;
+    background-color: rgb(89, 89, 255);
+    color: white;
+    border: 2px solid rgb(89, 89, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.boton-principal:hover {
+    background-color: rgb(151, 151, 244);
+    color: white;
+    border: 2px solid rgb(151, 151, 244);
+}
+
+.boton-segundario {
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: #2D2D2D;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.boton-segundario:hover {
+    background-color: #2D2D2D;
+    color: rgb(89, 89, 255);
+    border: 2px solid rgb(89, 89, 255);
+}
+
+.boton-regresar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    height: 65px;
+
+    background-color: rgb(6, 6, 18);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+
+    font-size: 18px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.boton-regresar:hover {
+    background-color: rgb(62, 62, 63);
+    color: white;
+    border: 2px solid white;
+}
+
+.logo-gato {
+    display: flex;
+    justify-content: center;
+}
+
+.cajita-rut {
+    width: 163px;
+}
+
+.cajita-rut :hover {
+    border: 2px solid rgb(89, 89, 255);
+}
+
+.cajita-contraseña {
+    width: 163px;
+}
+
+.cajita-contraseña :hover {
+    border: 2px solid rgb(89, 89, 255);
+}
+
+
+/*responcivo*/
+@media (max-width: 600px) {
+
+    .container,
+    .lista-contactos,
+    .fila-botones {
+        width: 300px;
+        max-width: 90%;
+    }
+
+    .formulario-contacto {
+        width: 300px;
+        max-width: 90%;
+    }
+
+    .contacto,
+    .boton-menu {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fila-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-menu {
+        height: 60px;
+        font-size: 15px;
+        text-align: center;
+    }
+}

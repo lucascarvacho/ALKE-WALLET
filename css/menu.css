@@ -1,0 +1,228 @@
+/*general*/
+body {
+    background-color: #2D2D2D;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+.layout {
+    display: flex;
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding-top: 3%;
+}
+
+/*barrade navegacion*/
+ul {
+    list-style: none;
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.menu-desplegable {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+    height: auto;
+    padding-top: 20px;
+    gap: 35px;
+}
+
+.menu-desplegable li {
+    position: relative;
+    width: 100%;
+}
+
+.menu-desplegable ul {
+    position: absolute;
+    min-width: 185px;
+    display: none;
+    margin-top: 20px;
+}
+
+.menu-desplegable>li>ul {
+    top: 0;
+    left: 100%;
+}
+
+.menu-desplegable a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.menu-desplegable li a:hover {
+    background: rgb(89, 89, 255);
+}
+
+.menu-desplegable li:hover>ul {
+    display: block;
+}
+
+nav {
+    width: 150px;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cosas-de-arriba {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+img {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+
+/*acciones principales*/
+
+
+
+
+
+
+.bloque {
+    /*position: relative;*/
+}
+
+.acciones-principales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.fila-botones {
+    display: flex;
+    gap: 16px;
+}
+
+.boton-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: clamp(160px, 14vw, 240px);
+    height: clamp(50px, 5vw, 65px);
+
+    background-color: rgb(89, 89, 255);
+    color: white;
+    border: 2px solid rgb(89, 89, 255);
+    border-radius: 8px;
+
+    font-size: clamp(14px, 1.2vw, 18px);
+    text-decoration: none;
+}
+
+.boton-contactos {
+    width: calc((clamp(160px, 14vw, 240px) * 2) + 16px);
+}
+
+.boton-menu:hover {
+    background-color: rgb(151, 151, 244);
+    color: white;
+    border: 2px solid rgb(151, 151, 244);
+}
+
+/*card saldo*/
+
+.card-saldo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 150px;
+
+    background: rgba(168, 85, 247, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 15px rgba(168, 85, 247, 0.6),
+        0 0 30px rgba(168, 85, 247, 0.3);
+
+    color: white;
+
+
+    font-size: 20px;
+}
+
+
+/*responsivo*/
+@media (max-width: 600px) {
+    .fila-botones {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .card-saldo,
+    .boton-menu,
+    .boton-contactos {
+        width: 80%;
+        max-width: 300px;
+        min-width: 240px;
+    }
+
+    .boton-menu,
+    .boton-contactos {
+        height: 60px;
+        font-size: 15px;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.fotoperfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto 20px auto;
+    border: solid white 5px;
+}

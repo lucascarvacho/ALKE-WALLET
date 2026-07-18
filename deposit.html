@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/deposit.css">
+</head>
+
+<body>
+    <section class="cosas-de-arriba">
+        <h2>ALKE WALLET</h2>
+        <img src="/img/LOGO WALLET.png" alt="">
+    </section>
+    <div class="layout">
+        <nav>
+            <img src="/img/fotoperfil.jpeg" alt="" class="fotoperfil">
+            <ul class="menu-desplegable">
+                <li>
+                    <a href="#">Hola Luks</a>
+                    <ul>
+                        <li><a href="/index.html">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li><a href="/transactions.html">Historial</a></li>
+                        <li><a href="/deposit.html">Fondos</a></li>
+                        <li><a href="/contacts.html">Contactos / Transferir</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Reclamos </a>
+
+                </li>
+                <li>
+                    <a href="#">Seguridad </a>
+
+                </li>
+
+            </ul>
+        </nav>
+        <div class="contenido">
+            <!--aqui poner saldo disponible-->
+            <h2 id="saldoDisponible"></h2>
+
+            <h2>¿Qué quieres hacer?</h2>
+
+            <div class="contenedor-fondos">
+                <form id="formularioDepositar" class="formulario-depositar">
+                    <label for="Depositar fondos">Depositar fondos</label>
+                    <br><br>
+                    <input type="number" id="depositarFondos">
+                    <br><br>
+                    <div class="fila-botones">
+
+                        <button type="submit" id="botonDepositar" class="boton-menu">Depositar</button>
+                    </div>
+                </form>
+
+
+
+                <form id="formularioRetirar" class="formulario-retirar">
+                    <label for="Retirar fondos">Retirar fondos</label>
+                    <br><br>
+                    <input type="number" id="retirarFondos">
+                    <br><br>
+                    <div class="fila-botones">
+
+                        <button type="submit" id="botonRetirar" class="boton-menu">Retirar</button>
+                    </div>
+                </form>
+            </div>
+            <a href="/menu.html" class="boton-menu boton-regresar">Regresar</a>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Lucas Carvacho Diseñador UX/UI</p>
+    </footer>
+
+    <script src="/js/deposit.js"></script>
+
+</body>
+
+</html>
